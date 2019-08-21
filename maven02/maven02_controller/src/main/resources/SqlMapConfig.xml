@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--引入外部文件源-->
+    <!--<properties resource="druid.properties"/>-->
+    <!--别名配置-->
+    <typeAliases>
+        <package name="com.wuhan.domain"/>
+    </typeAliases>
+
+<!--
+    <typeHandlers>
+       <typeHandler handler="com.wuhan.typeHandler.MyTypeHandler"/>
+    </typeHandlers>-->
+    <!--分页插件配置-->
+    <!--<plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+        </plugin>
+    </plugins>-->
+<!--<typeAliases>-->
+    <!--<package name="com.wuhan.domain"/>-->
+<!--</typeAliases>-->
+
+   <!-- <environments default="develop">
+        <environment id="develop">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                &lt;!&ndash; 驱动 &ndash;&gt;
+                <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+                &lt;!&ndash; url &ndash;&gt;
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/mybatis"/>
+                &lt;!&ndash; 用户名 &ndash;&gt;
+                <property name="username" value="root"/>
+                &lt;!&ndash; 密码 &ndash;&gt;
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>-->
+    <!--配置文件映射-->
+   <!-- <mappers>
+        <mapper resource="com/wuhan/dao/TestDao.xml"/>
+        &lt;!&ndash;<dao resource="com/wuhan/dao/UserDao.xml"></dao>&ndash;&gt;
+
+        <package name="com.wuhan.dao"/>
+    </mappers>-->
+</configuration>
